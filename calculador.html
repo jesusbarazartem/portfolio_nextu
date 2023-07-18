@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Envios.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="calculador.html">Calculador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">Contactenos</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="row bg-light">
+            <div class="col-10 col-md-3 mx-auto my-4">
+                <h1 class="mb-2">Calcular Precio</h1>
+                <p>Ingresa los datos en la siguiente tabla</p>
+                <form action="" class="form-signin">
+                    <div class="mb-2">
+                        <label for="ancho" class="form-label">Ancho (cm)</label>
+                        <input class="form-control" type="number" name="ancho" id="ancho" placeholder="10">
+                    </div>
+                    <div class="mb-2">
+                        <label for="alto" class="form-label">Alto (cm)</label>
+                        <input class="form-control" type="number" name="alto" id="alto" placeholder="10">
+                    </div>
+                    <div class="mb-2">
+                        <label for="profundo" class="form-label">Profundidad (cm)</label>
+                        <input class="form-control" type="number" name="profundo" id="profundo" placeholder="10">
+                    </div>
+                    <div class="mb-2">
+                        <label for="peso" class="form-label">Peso (Kg)</label>
+                        <input class="form-control" type="number" name="peso" id="peso" placeholder="4">
+                    </div>
+                    <div class="mb-2">
+                        <label for="origen" class="form-label">Origen</label>
+                        <select class="form-select" id="origen">
+                            <datalist id="options">
+                                <option value="Colombia">Colombia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Argentina">Argentina</option>
+                            </datalist>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label for="destino" class="form-label">Destino</label>
+                        <select class="form-select" id="destino">
+                            <datalist id="options">
+                                <option seleted>Colombia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Argentina">Argentina</option>
+                            </datalist>
+                        </select>
+                    </div>
+                    <div class="my-4 form-check form-check-inline">
+                        <label class="form-check-label" for="inline-radio1">Normal</label>
+                        <input type="radio" name="tipo" class="form-check-input" id="inline-radio1" value="normal" checked>
+                    </div>
+                    <div class="my-4 form-check form-check-inline">
+                        <label class="form-check-label" for="inline-radio2">Express</label>
+                        <input type="radio" name="tipo" class="form-check-input" id="inline-radio2" value="express">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Continuar</button>
+                    <hr>
+                    <div class="mb-2">
+                        <label for="total" class="form-label">Total:</label>
+                        <input type="number" class="form-control-plaintext" name="total" placeholder="155" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid py-1 bg-info text-white fixed-bottom">
+        <div class="row">
+            <div class="col text-center">
+                Derechos Reservados
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
